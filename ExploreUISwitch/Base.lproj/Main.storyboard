@@ -21,6 +21,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="1" green="0.35178980599999998" blue="0.80566236309999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" red="0.1144844914" green="0.71154188309999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="myActionSwitch:" destination="vXZ-lx-hvc" eventType="valueChanged" id="bdb-hK-Kvh"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Option One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzc-F3-zBY">
                                 <rect key="frame" x="99" y="273" width="126" height="21"/>
@@ -32,6 +35,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabelSwitch" destination="zzc-F3-zBY" id="Hii-XL-d4g"/>
+                        <outlet property="mySwitch" destination="Uuy-6C-ay5" id="zUr-Ev-cc8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
