@@ -17,10 +17,9 @@
 @implementation EVXViewController
 - (IBAction)myActionSwitch:(id)sender {
     UISwitch *myActionSwitch = (UISwitch*)sender;
-    if ([myActionSwitch isOn]) //NSLog(@"mySwitch Is ON!");
-
+    if ([myActionSwitch isOn])
         self.myLabelSwitch.text=@"Switch Is ON!";
-        else //    NSLog(@"mySwitch is off.");
+        else
         self.myLabelSwitch.text = @"Switch is OFF.";
 }
 
