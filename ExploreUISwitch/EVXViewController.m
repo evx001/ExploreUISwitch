@@ -10,20 +10,18 @@
 
 @interface EVXViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
-@property (weak, nonatomic) IBOutlet UILabel *myLabelSwitch;
+// @property (weak, nonatomic) IBOutlet UILabel *myLabelSwitch;
 
 @end
 
 @implementation EVXViewController
 - (IBAction)myActionSwitch:(id)sender {
     UISwitch *myActionSwitch = (UISwitch*)sender;
-    if ([myActionSwitch isOn])
-        NSLog(@"mySwitch Is ON!");
-        else
-            NSLog(@"mySwitch is off.");
-        self.myLabelSwitch.text = @"mySwitch is off.";
+    if ([myActionSwitch isOn]) //NSLog(@"mySwitch Is ON!");
 
-
+        self.myLabelSwitch.text=@"Switch Is ON!";
+        else //    NSLog(@"mySwitch is off.");
+        self.myLabelSwitch.text = @"Switch is OFF.";
 }
 
 - (void)viewDidLoad

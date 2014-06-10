@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface EVXViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *myLabelSwitch;
 @end
