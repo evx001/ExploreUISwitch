@@ -21,6 +21,7 @@
         NSLog(@"mySwitch Is ON!");
         else
             NSLog(@"mySwitch is off.");
+        self.myLabelSwitch.text = @"mySwitch is off.";
 
 
 }
